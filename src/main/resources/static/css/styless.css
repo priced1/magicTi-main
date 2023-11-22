@@ -1,0 +1,66 @@
+body {
+  font-family: Didot, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #287ea7;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.curso {
+  background-color: #095274; /* Ajuste o tom de azul conforme necessário */
+  border: 1px solid #095274;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+}
+
+.curso img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.curso h2 {
+  margin-top: 10px;
+}
+
+.curso p {
+  margin: 10px 0;
+}
+
+.curso button {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 16px;
+  background-color: #287ba1;
+  color: rgb(0, 8, 7);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.curso button:hover {
+  background-color: #2d799c;
+}
