@@ -11,40 +11,61 @@
     <!-- Adicione o Slick Carousel -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <!-- Adicione o link para o seu arquivo CSS se necessário -->
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+     <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+	
+    
 </head>
 <body>
      
-    <header>
-        <h1>Redes de computadores</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html">Voltar</a>
-            <a href="ajuda.html">Ajuda</a>
-        </nav>
-    </header>
+            <!-- create navigation bar ( header) -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/" th:href="@{/inicial}">MagicTI</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li> <a th:href="@{/index}">Cursos</a></li>
+					<li><a th:href="@{/users/perfil/{username}(username=${username})}">Perfil</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
+</br>
+</br>
+</br>
     <section class="module">
                 <!-- Carrossel para o Modulo 1 -->
         <div class="module-slider">
-            <div><img src="rede.slide1.jpg.png" alt="Slide 1"></div>
-            <div><img src="rede.slide2.jpg.png" alt="Slide 2"></div>
-            <div><img src="rede.slide3.jpg.png.jpg" alt="Slide 3"></div>
-            <div><img src="rede.slide4.jpg.png.jpg" alt="Slide 4"></div>
-            <div><img src="rede.slide5..jpg" alt="Slide 5"></div>
-            <div><img src="rede.slide6.jpg" alt="Slide 6"></div>
+            <div><img src="/img/rede.slide1.jpg.png" alt="Slide 1"></div>
+            <div><img src="/img/rede.slide2.jpg.png" alt="Slide 2"></div>
+            <div><img src="/img/rede.slide3.jpg.png.jpg" alt="Slide 3"></div>
+            <div><img src="/img/rede.slide4.jpg.png.jpg" alt="Slide 4"></div>
+            <div><img src="/img/rede.slide5..jpg" alt="Slide 5"></div>
+            <div><img src="/img/rede.slide6.jpg" alt="Slide 6"></div>
             
             <!-- Adicione mais slides conforme necessário para o Modulo 1 -->
         </div>
     </section>
 
-    <div class="module">
+    <!--<div class="module">
       <h2 class="module-title">Mandou bem!! Vamos para o proximo Modulo?</h2>
       <p class="module-description">
           <button onclick="location.href='modulo2_Redes.html';" class="module-button">Módulo 2</button>
       </p>
-  </div>
+  </div>-->
 
     <!-- Adicione mais módulos conforme necessário -->
 

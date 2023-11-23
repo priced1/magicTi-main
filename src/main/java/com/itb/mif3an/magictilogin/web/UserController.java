@@ -67,6 +67,10 @@ public class UserController {
 	public String login() {
 		return "login";
 	}
+	@GetMapping("/index")
+	public String index() {
+		return "index";
+	}
 
 	@GetMapping("/users/living-room")
 	public String livingRoom() {
